@@ -11,9 +11,17 @@ body {
 
 h1,
 h2,
-h3,
+h3 {
+  margin: 0.75em 0;
+  text-align: center;
+  font-family: 'Square Peg', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+}
+
 p {
-  margin: 1em 0;
+  width: 80%;
+  padding: 1em 0;
 }
 
 body {
@@ -24,6 +32,7 @@ body {
 
 img {
   border: 5px solid #fff;
+  border-style: outset;
 }
 
 /* Navbar Styles  */
@@ -42,8 +51,34 @@ img {
   color: rgba(255, 255, 255);
 }
 
+/* youTube Responsive Embed */
+.youtube-video {
+  max-width: 720px;
+  margin: 3em auto;
+}
+
+.embed-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.embed-responsive iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 /* Horizontal align cards  */
 .card {
+  margin: 0 auto;
+  background-color: rgba(174, 205, 160, 0.3);
+  max-width: 340px;
+}
+
+.card-text {
   margin: 0 auto;
 }
 
@@ -60,4 +95,21 @@ img {
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+
+.div-center {
+  display: grid;
+  place-items: center;
+}
+@media screen and (max-width: 1200px) and (min-width: 360px) {
+  #about h1 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 1.5em;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
