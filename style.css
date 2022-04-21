@@ -124,7 +124,6 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: black;
-  padding: 10px;
 }
 .grid-item {
   padding: 20px;
